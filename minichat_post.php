@@ -6,8 +6,6 @@
  * Time: 6:57 PM
  */
 
-
-
 if(empty($_POST['pseudo']) AND empty($_POST['message'])) {
 
     echo 'Thank you for putting pseudo and message.';
@@ -50,8 +48,4 @@ function test_input($data) {
     return $data;
 }
 
-
-
 ?>
-
-
