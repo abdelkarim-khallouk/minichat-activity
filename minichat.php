@@ -11,7 +11,6 @@
 
 <?php
 
-
 $pseudo = empty($_POST['pseudo'])?'':$_POST['pseudo'];
 $date = date('d/m/Y H:i:s');
 echo $date;
@@ -21,7 +20,6 @@ echo $date;
 <h2 style="text-align:center">Tapez votre message ici !</h2>
 
 <form style="center" method="post" action="minichat_post.php">
-
     <p>
         Pseudo: <input name="pseudo" value="<?php echo $_GET['id'] ?>" required/><br/>
     </p>
@@ -31,8 +29,6 @@ echo $date;
     <p>
         <input type="submit" value="Publier" name="button"/>
     </p>
-
-
 </form>
 
     <br/>
@@ -62,7 +58,6 @@ while ($data = $res->fetch()) {
 }
 
 $res->closeCursor();
-
 
 ?>
 
